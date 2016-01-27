@@ -9,7 +9,9 @@
       <div class="container">
         <div class="header-style">
           <div class="main-logo">
-            <img src="http://placehold.it/150x50" alt="Gllacy Shop">
+            <a href="index.html">
+              <img src="http://placehold.it/150x50" alt="Gllacy Shop">
+            </a>
           </div>
           <nav class="main-menu">
             <ul>
@@ -37,7 +39,7 @@
       </div>
     </header>
     <main class="main-catalog">
-      <div class="Breadcrumbs">
+      <div class="breadcrumbs">
         <ul>
           <li>
             <a href="#">Главная</a>
@@ -54,40 +56,49 @@
         Сливочное мороженое
       </h1>
       <section class="filter">
-        <form class="ranging">
-          Сортировка:<br>
-          <select>
-            <option>
-              по популярности
-            </option>
-          </select>
-        </form>
-        <div class="price">
-          Цена: 100 руб. - 500 руб.<br>
-          <div class="range-price">
-            <div class="bar"></div>
-            <div class="active-bar"></div>
-            <div class="left-wheel"></div>
-            <div class="right-wheel"></div>
+        <form class="filter-forms" method="post" action="https://echo.htmlacademy.ru/">
+          <div class="ranging">
+            Сортировка:<br>
+            <select>
+              <option>
+                по популярности
+              </option>
+              <option>
+                по цене
+              </option>
+              <option>
+                новинки
+              </option>
+            </select>
           </div>
-        </div>
-        <form class="fatness">
-          Жирность:
-          <input type="radio" name="fat" value="0%" id="0"><label for="0">0%</label>
-          <input type="radio" name="fat" value="less10" id="less10"><label for="less10">до 10%</label>
-          <input type="radio" name="fat" value="less30" id="less30"><label for="less30">до 30%</label>
-          <input type="radio" name="fat" value="more30" id="more30"><label for="more30">выше 30%</label>
-        </form>
-        <form class="ingredient">
-          Наполнители:<br>
-          <input type="checkbox" name="chocolate" id="choco"><label for="choco">шоколадные</label>
-          <input type="checkbox" name="sugar" id="sugar"><label for="sugar">сахарные присыпки</label>
-          <input type="checkbox" name="fruits" id="fruits"><label for="fruits">фрукты</label>
-          <input type="checkbox" name="syrup" id="syrup"><label for="syrup">сиропы</label>
-          <input type="checkbox" name="jam" id="jam"><label for="jam">джемы</label>
-        </form>
-        <form class="btn-filter" method="post" action="https://echo.htmlacademy.ru/">
-          <input type="submit" value="Применить">
+          <div class="price">
+            Цена: 100 руб. - 500 руб.<br>
+            <div class="range-price">
+              <div class="bar">
+                <div class="active-bar"></div>
+              </div>
+              <div class="left-wheel"></div>
+              <div class="right-wheel"></div>
+            </div>
+          </div>
+          <div class="fatness">
+            Жирность:
+            <input type="radio" name="fat" value="0%" id="0"><label for="0">0%</label>
+            <input type="radio" name="fat" value="less10" id="less10"><label for="less10">до 10%</label>
+            <input type="radio" name="fat" value="less30" id="less30"><label for="less30">до 30%</label>
+            <input type="radio" name="fat" value="more30" id="more30"><label for="more30">выше 30%</label>
+          </div>
+          <div class="ingredient">
+            Наполнители:<br>
+            <input type="checkbox" name="chocolate" id="choco"><label for="choco">шоколадные</label>
+            <input type="checkbox" name="sugar" id="sugar"><label for="sugar">сахарные присыпки</label>
+            <input type="checkbox" name="fruits" id="fruits"><label for="fruits">фрукты</label>
+            <input type="checkbox" name="syrup" id="syrup"><label for="syrup">сиропы</label>
+            <input type="checkbox" name="jam" id="jam"><label for="jam">джемы</label>
+          </div>
+          <div class="btn-filter">
+            <input type="submit" value="Применить">
+          </div>
         </form>
       </section>
       <article class="catalog-items">
@@ -101,7 +112,7 @@
             </figcaption>
           </figure>
           <p class="item-price">
-            310 Р/кг
+            310 ₽/кг
           </p>
         </section>
         <section class="item2">
@@ -114,7 +125,7 @@
             </figcaption>
           </figure>
           <p class="item-price">
-            380 Р/кг
+            380 ₽/кг
           </p>
         </section>
         <section class="item3">
@@ -127,7 +138,7 @@
             </figcaption>
           </figure>
           <p class="item-price">
-            355 Р/кг
+            355 ₽/кг
           </p>
         </section>
         <section class="item4">
@@ -140,7 +151,7 @@
             </figcaption>
           </figure>
           <p class="item-price">
-            415 Р/кг
+            415 ₽/кг
           </p>
         </section>
         <section class="item5">
@@ -153,7 +164,7 @@
             </figcaption>
           </figure>
           <p class="item-price">
-            325 Р/кг
+            325 ₽/кг
           </p>
         </section>
         <section class="item6">
@@ -166,7 +177,7 @@
             </figcaption>
           </figure>
           <p class="item-price">
-            410 Р/кг
+            410 ₽/кг
           </p>
         </section>
         <section class="item7">
@@ -179,7 +190,7 @@
             </figcaption>
           </figure>
           <p class="item-price">
-            375 Р/кг
+            375 ₽/кг
           </p>
         </section>
         <section class="item8">
@@ -192,7 +203,7 @@
             </figcaption>
           </figure>
           <p class="item-price">
-            320 Р/кг
+            320 ₽/кг
           </p>
         </section>
         <section class="item9">
@@ -205,7 +216,7 @@
             </figcaption>
           </figure>
           <p class="item-price">
-            440 Р/кг
+            440 ₽/кг
           </p>
         </section>
         <section class="item10">
@@ -218,7 +229,7 @@
             </figcaption>
           </figure>
           <p class="item-price">
-            435 Р/кг
+            435 ₽/кг
           </p>            
         </section>
         <section class="item11">
@@ -231,7 +242,7 @@
             </figcaption>
           </figure>
           <p class="item-price">
-            355 Р/кг
+            355 ₽/кг
           </p>
         </section>
         <section class="item12">
@@ -244,12 +255,12 @@
             </figcaption>
           </figure>
           <p class="item-price">
-            420 Р/кг
+            420 ₽/кг
           </p>
         </section>
       </article>
       <div class="pages">
-        <a href="#" class="btn page-prev" hidden></a>
+        <a href="#" class="disabled btn page-prev" rel="prev"></a>
         <a href="#" class="active page1">1</a>
         <a href="#" class="page2">2</a>
         <a href="#" class="page3">3</a>
@@ -267,7 +278,7 @@
       </section>
       <section class="partner-menu">
         <div class="partner-menu-left">
-          <a href="#">Для поставщиков</a>
+          <a class="special" href="#">Для поставщиков</a>
           <a href="#">О производстве</a>
         </div>
         <div class="partner-menu-right">   
@@ -276,7 +287,9 @@
         </div>
       </section>
       <section class="footer-copyright">
-        <img src="http://placehold.it/100x50" alt="логотип HTML Academy">
+        <a href="https://htmlacademy.ru/">
+          <img src="http://placehold.it/100x50" alt="HTML Academy">
+        </a>
         <p>
           Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> © 2016
         </p>
