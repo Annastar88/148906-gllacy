@@ -17,6 +17,23 @@
             <ul>
               <li>
                 <a class="active-menu" href="#">Каталог</a>
+                <ul class="submenu">
+                  <li class="new">
+                    <a href="#">Новинки</a>
+                  </li>
+                  <li class="creamy"> 
+                    <a href="catalog.html">Сливочное</a>
+                  </li>
+                  <li class="sherbet">
+                    <a href="#">Щербет</a>
+                  </li>
+                  <li class="fruit-ice">
+                    <a href="№">Фруктовый лед</a>
+                  </li>
+                  <li class="melorin">
+                    <a href="#">Мелорин</a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="#">Доставка и оплата</a>
@@ -28,8 +45,43 @@
           </nav>
           <div class="user-block">
             <a class="search" href="#"></a>
+            <div class="search-box">
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                <input type="text" name="looking-for" value="" placeholder="Что ищем?">
+              </form>
+            </div>
             <a class="login" href="#">Вход</a>
+            <div class="login-box">
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <input type="text" name="main-login" id="main-login" placeholder="Электронная почта">
+                <input type="text" name="password-login" id="password-login" placeholder="Пароль">
+                <input class="btn-login" type="submit" value="Войти">
+              </form>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
             <a class="cart" href="#">Пусто</a>
+            <a class="full-cart" href="#">2 товара</a>
+            <div class="cart-box">
+              <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="cart-item">
+                  <p>
+                    <img src="http://placehold.it/30x30" alt="Пломбир с апельсиновым кремом">
+                    <span class="cart-item-name">Пломбир с апельсиновым кремом</span>
+                    <span class="calculation">1,5 кг х <span class="cart-price">200 руб.</span></span>
+                    <span class="sum">300 руб.</span>
+                  </p>
+                  <p>
+                    <img src="http://placehold.it/30x30" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    <span class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</span>
+                    <span class="calculation">1,5 кг х <span class="cart-price">300 руб.</span></span>
+                    <span class="sum">450 руб.</span>
+                  </p>
+                </div>
+                <p class="total">Итого: 750 руб.</p>
+                <input class="btn-login" type="submit" value="Оформить заказ">
+              </form>
+            </div>
           </div>
         </div>
         <p class="timetable">
@@ -56,7 +108,7 @@
         Сливочное мороженое
       </h1>
       <section class="filter">
-        <form class="filter-forms" method="post" action="https://echo.htmlacademy.ru/">
+        <form class="filter-forms" method="get" action="https://echo.htmlacademy.ru/">
           <div class="ranging">
             Сортировка:<br>
             <select>
@@ -101,8 +153,8 @@
           </div>
         </form>
       </section>
-      <article class="catalog-items">
-        <section class="item1">
+      <section class="catalog-items">
+        <article class="item">
           <figure>
             <img src="http://placehold.it/50x50" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <figcaption>
@@ -114,8 +166,8 @@
           <p class="item-price">
             310 ₽/кг
           </p>
-        </section>
-        <section class="item2">
+        </article>
+        <article class="item">
           <figure>
             <img src="http://placehold.it/50x50" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <figcaption>
@@ -127,8 +179,8 @@
           <p class="item-price">
             380 ₽/кг
           </p>
-        </section>
-        <section class="item3">
+        </article>
+        <article class="item">
           <figure>
             <img src="http://placehold.it/50x50" alt="Сливочно-кофейное с кусочками шоколада">
             <figcaption>
@@ -140,8 +192,8 @@
           <p class="item-price">
             355 ₽/кг
           </p>
-        </section>
-        <section class="item4">
+        </article>
+        <article class="item">
           <figure>
             <img src="http://placehold.it/50x50" alt="Сливочное крем-брюле с карамельной подливкой">
             <figcaption>
@@ -153,8 +205,8 @@
           <p class="item-price">
             415 ₽/кг
           </p>
-        </section>
-        <section class="item5">
+        </article>
+        <article class="item">
           <figure>
             <img src="http://placehold.it/50x50" alt="Сливочное с брусничным джемом">
             <figcaption>
@@ -166,8 +218,8 @@
           <p class="item-price">
             325 ₽/кг
           </p>
-        </section>
-        <section class="item6">
+        </article>
+        <article class="item">
           <figure>
             <img src="http://placehold.it/50x50" alt="Сливочно-черничное с цельными ягодами черники">
             <figcaption>
@@ -179,8 +231,8 @@
           <p class="item-price">
             410 ₽/кг
           </p>
-        </section>
-        <section class="item7">
+        </article>
+        <article class="item">
           <figure>
             <img src="http://placehold.it/50x50" alt="Сливочно-лимонное с карамельной присыпкой">
             <figcaption>
@@ -192,8 +244,8 @@
           <p class="item-price">
             375 ₽/кг
           </p>
-        </section>
-        <section class="item8">
+        </article>
+        <article class="item">
           <figure>
             <img src="http://placehold.it/50x50" alt="Сливочное с шоколадной стружкой">
             <figcaption>
@@ -205,8 +257,8 @@
           <p class="item-price">
             320 ₽/кг
           </p>
-        </section>
-        <section class="item9">
+        </article>
+        <article class="item">
           <figure>
             <img src="http://placehold.it/50x50" alt="Сливочно-ванильное с кусочками шоколада">
             <figcaption>
@@ -218,8 +270,8 @@
           <p class="item-price">
             440 ₽/кг
           </p>
-        </section>
-        <section class="item10">
+        </article>
+        <article class="item">
           <figure>
             <img src="http://placehold.it/50x50" alt="Сливочное с ментоловым сиропом">
             <figcaption>
@@ -231,8 +283,8 @@
           <p class="item-price">
             435 ₽/кг
           </p>            
-        </section>
-        <section class="item11">
+        </article>
+        <article class="item">
           <figure>
             <img src="http://placehold.it/50x50" alt="Сливочное с кусочками черного шоколада">
             <figcaption>
@@ -244,8 +296,8 @@
           <p class="item-price">
             355 ₽/кг
           </p>
-        </section>
-        <section class="item12">
+        </article>
+        <article class="item">
           <figure>
             <img src="http://placehold.it/50x50" alt="Сливочное с мятным сиропом">
             <figcaption>
@@ -257,16 +309,16 @@
           <p class="item-price">
             420 ₽/кг
           </p>
-        </section>
-      </article>
+        </article>
+      </section>
       <div class="pages">
-        <a href="#" class="disabled btn page-prev" rel="prev"></a>
+        <a href="#" class="disabled btn page-prev"></a>
         <a href="#" class="active page1">1</a>
         <a href="#" class="page2">2</a>
         <a href="#" class="page3">3</a>
         <a href="#" class="page4">4</a>
         <a href="#" class="page5">5</a>
-        <a href="#" class="btn page-next" rel="next"></a>
+        <a href="#" class="btn page-next"></a>
       </div>
     </main>
     <footer class="container">
