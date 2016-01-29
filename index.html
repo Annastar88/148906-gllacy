@@ -9,7 +9,9 @@
       <div class="container">
         <div class="header-style">
           <div class="main-logo">
-            <img src="http://placehold.it/150x50" alt="Gllacy Shop">
+            <a href="index.html">
+              <img src="http://placehold.it/150x50" alt="Gllacy Shop">
+            </a>
           </div>
           <nav class="main-menu">
             <ul>
@@ -26,7 +28,7 @@
                     <a href="#">Щербет</a>
                   </li>
                   <li class="fruit-ice">
-                    <a href="№">Фруктовый лед</a>
+                    <a href="#">Фруктовый лед</a>
                   </li>
                   <li class="melorin">
                     <a href="#">Мелорин</a>
@@ -45,7 +47,7 @@
             <a class="search" href="#"></a>
             <div class="search-box">
               <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <input type="text" name="looking-for" value="" placeholder="Что ищем?">
+                <input type="text" name="looking-for" placeholder="Что ищем?">
               </form>
             </div>
             <a class="login" href="#">Вход</a>
@@ -55,31 +57,35 @@
                 <input type="text" name="password-login" id="password-login" placeholder="Пароль">
                 <input class="btn-login" type="submit" value="Войти">
               </form>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+              <div class="forget-password">
+                <a href="#">Забыли пароль?</a>
+              </div>
+              <div class="new-registry">
+                <a href="#">Новая регистрация</a>
+              </div>
             </div>
             <a class="cart" href="#">Пусто</a>
-            <a class="full-cart" href="#">2 товара</a>
+            <!-- <a class="full-cart" href="#">2 товара</a>
             <div class="cart-box">
               <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
                 <div class="cart-item">
-                  <p>
+                  <div class="cart-item-info">
                     <img src="http://placehold.it/30x30" alt="Пломбир с апельсиновым кремом">
                     <span class="cart-item-name">Пломбир с апельсиновым кремом</span>
                     <span class="calculation">1,5 кг х <span class="cart-price">200 руб.</span></span>
                     <span class="sum">300 руб.</span>
-                  </p>
-                  <p>
+                  </div>
+                  <div class="cart-item-info">
                     <img src="http://placehold.it/30x30" alt="Клубничный пломбир с присыпкой из белого шоколада">
                     <span class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</span>
                     <span class="calculation">1,5 кг х <span class="cart-price">300 руб.</span></span>
                     <span class="sum">450 руб.</span>
-                  </p>
+                  </div>
                 </div>
-                <p class="total">Итого: 750 руб.</p>
+                <div class="total">Итого: 750 руб.</div>
                 <input class="btn-login" type="submit" value="Оформить заказ">
               </form>
-            </div>
+            </div> -->
           </div>
         </div>
         <p class="timetable">
@@ -91,9 +97,11 @@
             <input type="radio" name="slide1" id="slide1" checked>
             <input type="radio" name="slide2" id="slide2">
             <input type="radio" name="slide3" id="slide3">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-            <label for="slide3"></label>
+          <div class="label-slide">
+            <label class="slide1" for="slide1"></label>
+            <label class="slide2" for="slide2"></label>
+            <label class="slide3" for="slide3"></label>
+          </div>
           </div>
           <div class="slider-content">
             <div class="slide1">
@@ -151,7 +159,7 @@
         </a>
       </section>
       <section class="hit-item">
-        <article class="hit-item">
+        <article class="item">
           <div class="hit">
             Хит
           </div>
@@ -163,11 +171,11 @@
               </a>
             </figcaption>
           </figure>
-          <p class="hit-price">
+          <p class="item-price">
             310 ₽/кг
           </p>
         </article>
-        <article class="hit-item">
+        <article class="item">
           <div class="hit">
             Хит
           </div>
@@ -179,11 +187,11 @@
               </a>
             </figcaption>
           </figure>
-          <p class="hit-price">
+          <p class="item-price">
             380 ₽/кг
           </p>
         </article>
-        <article class="hit-item">
+        <article class="item">
           <div class="hit">
             Хит
           </div>
@@ -195,11 +203,11 @@
               </a>
             </figcaption>
           </figure>
-          <p class="hit-price">
+          <p class="item-price">
             355 ₽/кг
           </p>
         </article>
-        <article class="hit-item">
+        <article class="item">
           <div class="hit">
             Хит
           </div>
@@ -211,7 +219,7 @@
               </a>
             </figcaption>
           </figure>
-          <p class="hit-price">
+          <p class="item-price">
             415 ₽/кг
           </p>
         </article>
@@ -275,7 +283,7 @@
     </main>
     <footer class="container">
       <section class="footer-smm">
-        <a class="smm-btn smm-btn-twit" href="#" hidden>Твиттер</a>
+        <a class="smm-btn smm-btn-twit" href="#">Твиттер</a>
         <a class="smm-btn smm-btn-inst" href="#">Инстаграм</a>
         <a class="smm-btn smm-btn-fb" href="#">Фейсбук</a>
         <a class="smm-btn smm-btn-vk" href="#">Вконтакте</a>
