@@ -1,0 +1,21 @@
+body {
+	font-size: 16px;
+	line-height: 22px;
+	color: #fff;
+	font-weight: normal;
+	font-family: "Roboto Medium";
+}
+header {
+	font-size: 16px;
+	color:#fff;
+	line-height: auto;
+	font-weight: bold;
+	font-family: "Roboto Bold";
+}
+footer {
+	font-size: 13px;
+	color: #fff;
+	line-height: auto;
+	font-weight: normal;
+	font-family: "Roboto Regular";
+}
