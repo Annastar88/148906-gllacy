@@ -1,21 +1,57 @@
 body {
-	font-size: 16px;
-	line-height: 22px;
-	color: #fff;
-	font-weight: normal;
-	font-family: "Roboto Medium";
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Roboto", "Arial", "Sans-Serif";
+  background: #89a194;
 }
 header {
-	font-size: 16px;
-	color:#fff;
-	line-height: auto;
-	font-weight: bold;
-	font-family: "Roboto Bold";
-}
+  font-weight: 700;
+	}
 footer {
-	font-size: 13px;
-	color: #fff;
-	line-height: auto;
-	font-weight: normal;
-	font-family: "Roboto Regular";
+  font-size: 13px;
+  font-weight: normal;
+}
+.inside {
+  fill: #a1b5aa;
+}
+.border {
+  fill: #fff;
+}
+.search svg {
+  fill: #fff;
+}
+.enter-icon {
+  fill: #fff;
+  fill-opacity: 0.99;
+}
+.company-feature1 svg,
+.company-feature2 svg,
+.company-feature3 svg,
+.company-feature4 svg {
+  fill: #323232;
+}
+.partner-menu svg {
+  fill: #f7f8f8;
+}
+.smm-btn-vk svg {
+  fill: #fff;
+  opacity: 0.8;
+}
+.smm-btn-twit svg {
+  fill: #fff;
+  opacity: 0.8;
+}
+.smm-btn-insta svg {
+  fill: #fff;
+  opacity: 0.8;
+}
+.smm-btn-fb svg {
+  fill: #fff;
+  opacity: 0.8;
+}
+.pages svg {
+  fill: #fff;
+  opacity: 0.2;
 }
