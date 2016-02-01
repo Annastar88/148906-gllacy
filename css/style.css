@@ -51,7 +51,12 @@ footer {
   fill: #fff;
   opacity: 0.8;
 }
-.pages svg {
+.page-next svg {
+  fill: #fff;
+  opacity: 1;
+  transform: rotate(180deg);
+}
+.page-prev svg {
   fill: #fff;
   opacity: 0.2;
 }
