@@ -1,9 +1,9 @@
 body {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.7;
   color: #fff;
   font-weight: 500;
-  font-family: "Roboto", "Arial", "Sans-Serif";
+  font-family: "Roboto", "Arial", sans-serif;
   background: #89a194;
 }
 header {
@@ -13,8 +13,21 @@ footer {
   font-size: 13px;
   font-weight: normal;
 }
-.inside {
-  fill: #a1b5aa;
+.search {
+  padding: 10px 20px;
+  background: #a1b5aa;
+  border-radius: 10px;
+}
+.search-box {
+  display: none;
+}
+.login-box {
+  display: none;
+}
+.login {
+  padding: 10px 20px;
+  background: #a1b5aa;
+  border-radius: 10px;
 }
 .border {
   fill: #fff;
@@ -24,12 +37,23 @@ footer {
 }
 .enter-icon {
   fill: #fff;
-  fill-opacity: 0.99;
 }
-.company-feature1 svg,
-.company-feature2 svg,
-.company-feature3 svg,
-.company-feature4 svg {
+.cart {
+  display: block;
+  padding: 10px 20px;
+  background: #a1b5aa;
+  border-radius: 10px;
+}
+.full-cart {
+  display: none;
+}
+.cart-box {
+  display: none;
+}
+.delete-icon svg {
+  fill: #353535;
+}
+.company-feature svg {
   fill: #323232;
 }
 .partner-menu svg {
