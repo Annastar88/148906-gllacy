@@ -150,10 +150,13 @@
                     новинки
                   </option>
                 </select>
+                <svg class="select-icon" width="7.781" height="5" viewBox="0 0 7.781 5">
+                  <path d="M-0.007,-0.013 L7.795,-0.013 L3.952,5.012 L3.829,5.012 L-0.007,-0.013 Z" fill-rule="evenodd"/>
+                </svg>
               </div>
             </fieldset>
             <fieldset class="price">
-              <legend>Цена: <span class="min-price">100</span> руб. - <span class="max-price">500</span> руб.</legend>
+              <legend>Цена: <span class="min-price">100</span> руб. – <span class="max-price">500</span> руб.</legend>
               <div class="range-price">
                 <div class="bar">
                   <div class="active-bar"></div>
@@ -164,18 +167,22 @@
             </fieldset>
             <fieldset class="fatness">
               <legend>Жирность:</legend>
-              <input type="radio" name="fat" value="0%" id="0"><label for="0">0%</label>
-              <input type="radio" name="fat" value="less10" id="less10" checked><label for="less10">до 10%</label>
-              <input type="radio" name="fat" value="less30" id="less30"><label for="less30">до 30%</label>
-              <input type="radio" name="fat" value="more30" id="more30"><label for="more30">выше 30%</label>
+              <div class="fatness-options">
+                <input type="radio" name="fat" value="0%" id="0"><label for="0">0%</label>
+                <input type="radio" name="fat" value="less10" id="less10" checked><label for="less10">до 10%</label>
+                <input type="radio" name="fat" value="less30" id="less30"><label for="less30">до 30%</label>
+                <input type="radio" name="fat" value="more30" id="more30"><label for="more30">выше 30%</label>
+              </div>
             </fieldset>
             <fieldset class="ingredient">
               <legend>Наполнители:</legend>
-              <input type="checkbox" name="chocolate" id="choco" checked><label for="choco">шоколадные</label>
-              <input type="checkbox" name="sugar" id="sugar" checked><label for="sugar">сахарные присыпки</label>
-              <input type="checkbox" name="fruits" id="fruits"><label for="fruits">фрукты</label>
-              <input type="checkbox" name="syrup" id="syrup"><label for="syrup">сиропы</label>
-              <input type="checkbox" name="jam" id="jam"><label for="jam">джемы</label>
+              <div class="ingredient-options">
+                <input type="checkbox" name="chocolate" id="choco" checked><label for="choco">шоколадные</label>
+                <input type="checkbox" name="sugar" id="sugar" checked><label for="sugar">сахарные присыпки</label>
+                <input type="checkbox" name="fruits" id="fruits"><label for="fruits">фрукты</label>
+                <input type="checkbox" name="syrup" id="syrup"><label for="syrup">сиропы</label>
+                <input type="checkbox" name="jam" id="jam"><label for="jam">джемы</label>
+              </div>
             </fieldset>
             <div class="btn-filter">
               <input type="submit" value="Применить">
@@ -193,7 +200,7 @@
               </figcaption>
             </figure>
             <p class="item-price">
-              <b>310 ₽</b>/кг
+              <b>310₽</b>/кг
             </p>
           </article>
           <article class="item">
@@ -206,7 +213,7 @@
               </figcaption>
             </figure>
             <p class="item-price">
-              <b>380 ₽</b>/кг
+              <b>380₽</b>/кг
             </p>
           </article>
           <article class="item">
@@ -219,7 +226,7 @@
               </figcaption>
             </figure>
             <p class="item-price">
-              <b>355 ₽</b>/кг
+              <b>355₽</b>/кг
             </p>
           </article>
           <article class="item">
@@ -232,7 +239,7 @@
               </figcaption>
             </figure>
             <p class="item-price">
-              <b>415 ₽</b>/кг
+              <b>415₽</b>/кг
             </p>
           </article>
           <article class="item">
@@ -245,7 +252,7 @@
               </figcaption>
             </figure>
             <p class="item-price">
-              <b>325 ₽</b>/кг
+              <b>325₽</b>/кг
             </p>
           </article>
           <article class="item">
@@ -258,7 +265,7 @@
               </figcaption>
             </figure>
             <p class="item-price">
-              <b>410 ₽</b>/кг
+              <b>410₽</b>/кг
             </p>
           </article>
           <article class="item">
@@ -271,7 +278,7 @@
               </figcaption>
             </figure>
             <p class="item-price">
-              <b>375 ₽</b>/кг
+              <b>375₽</b>/кг
             </p>
           </article>
           <article class="item">
@@ -284,7 +291,7 @@
               </figcaption>
             </figure>
             <p class="item-price">
-              <b>320 ₽</b>/кг
+              <b>320₽</b>/кг
             </p>
           </article>
           <article class="item">
@@ -297,7 +304,7 @@
               </figcaption>
             </figure>
             <p class="item-price">
-              <b>440 ₽</b>/кг
+              <b>440₽</b>/кг
             </p>
           </article>
           <article class="item">
@@ -310,7 +317,7 @@
               </figcaption>
             </figure>
             <p class="item-price">
-              <b>435 ₽</b>/кг
+              <b>435₽</b>/кг
             </p>            
           </article>
           <article class="item">
@@ -323,7 +330,7 @@
               </figcaption>
             </figure>
             <p class="item-price">
-              <b>355 ₽</b>/кг
+              <b>355₽</b>/кг
             </p>
           </article>
           <article class="item">
@@ -336,7 +343,7 @@
               </figcaption>
             </figure>
             <p class="item-price">
-              <b>420 ₽</b>/кг
+              <b>420₽</b>/кг
             </p>
           </article>
         </section>
