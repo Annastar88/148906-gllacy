@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>Каталог мороженого Gllacy</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+   <div class="wrapper">
     <header class="main-header clearfix">
       <div class="container clearfix">
         <div class="header-style clearfix">
@@ -53,7 +55,7 @@
             </a>
             <div class="search-box">
               <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <input type="text" name="looking-for" placeholder="Что ищем?">
+                <input class="text-input" type="text" name="looking-for" placeholder="Что ищем?">
               </form>
             </div>
             <a class="login" href="#">
@@ -63,9 +65,9 @@
             </a>
             <div class="login-box">
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                <input type="text" name="main-login" id="main-login" placeholder="Электронная почта">
-                <input type="text" name="password-login" id="password-login" placeholder="Пароль">
-                <input class="btn-login" type="submit" value="Войти">
+                <input class="text-input" type="text" name="main-login" id="main-login" placeholder="Электронная почта">
+                <input class="text-input" type="text" name="password-login" id="password-login" placeholder="Пароль">
+                <input class="btn-login small-bth" type="submit" value="Войти">
               </form>
               <div class="login-options">
                 <a href="#">Забыли пароль?</a>
@@ -77,7 +79,12 @@
                 <path class="border" d="M20.576,4.429 L19.372,13.341 C19.188,14.263 18.348,14.976 17.490,14.976 L6.610,14.976 C5.751,14.976 4.913,14.263 4.731,13.341 L3.262,3.054 C3.116,2.322 3.105,2.077 3.125,1.999 L1.000,1.999 C0.447,1.999 -0.000,1.552 -0.000,0.999 C-0.000,0.447 0.447,-0.001 1.000,-0.001 L5.000,-0.001 C5.552,-0.001 6.000,0.447 6.000,0.999 C6.000,1.515 5.604,1.925 5.102,1.979 L19.067,1.979 C20.172,1.979 20.840,3.110 20.576,4.429 ZM5.418,3.946 L6.731,12.946 L17.403,12.946 C17.398,12.946 17.399,12.944 17.407,12.933 L18.593,4.145 C18.593,4.145 18.621,3.946 18.624,3.946 L5.418,3.946 ZM7.245,15.956 C8.281,15.956 9.120,16.795 9.120,17.830 C9.120,18.865 8.281,19.704 7.245,19.704 C6.210,19.704 5.371,18.865 5.371,17.830 C5.371,16.795 6.210,15.956 7.245,15.956 ZM16.246,15.956 C17.281,15.956 18.120,16.795 18.120,17.830 C18.120,18.865 17.281,19.704 16.246,19.704 C15.210,19.704 14.371,18.865 14.371,17.830 C14.371,16.795 15.210,15.956 16.246,15.956 Z" fill-rule="evenodd"/>
               </svg>Пусто
             </a>
-            <a class="full-cart" href="#">2 товара</a>
+            <a class="full-cart" href="#">
+              <svg class="full-cart-icon" xmlns="http://www.w3.org/2000/svg" width="20.6" height="19.7" viewBox="0 0 20.6 19.7">
+                <path class="inside" d="M17.8 13.3l1.3-9.4v-.2H4.9l1.4 9.6h11.5z" fill-rule="evenodd"/>
+                <path class="border" d="M20.6 4.4l-1.2 8.9c-.2.9-1 1.6-1.9 1.6H6.6c-.9 0-1.7-.7-1.9-1.6L3.3 3.1c-.2-.8-.2-1-.2-1.1H1c-.6 0-1-.4-1-1s.4-1 1-1h4c.6 0 1 .4 1 1 0 .5-.4.9-.9 1h14c1.1 0 1.7 1.1 1.5 2.4zM5.4 3.9l1.3 9h10.7l1.2-8.8v-.2H5.4zM7.2 16c1 0 1.9.8 1.9 1.9s-.8 1.9-1.9 1.9c-1 0-1.9-.8-1.9-1.9S6.2 16 7.2 16zm9 0c1 0 1.9.8 1.9 1.9s-.8 1.9-1.9 1.9c-1 0-1.9-.8-1.9-1.9s.9-1.9 1.9-1.9z" fill-rule="evenodd"/>
+              </svg>2 товара
+            </a>
             <div class="cart-box">
               <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
                 <div class="cart-item">
@@ -105,7 +112,7 @@
                   </div>
                 </div>
                 <div class="total">Итого: 750 руб.</div>
-                <input class="btn-login" type="submit" value="Оформить заказ">
+                <input class="btn-cart small-bth" type="submit" value="Оформить заказ">
               </form>
             </div>
           </div>
@@ -121,7 +128,7 @@
         <div class="breadcrumbs">
           <ul>
             <li>
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li>
               <a href="#">Каталог</a>
@@ -168,8 +175,8 @@
             <fieldset class="fatness">
               <legend>Жирность:</legend>
               <div class="fatness-options">
-                <input type="radio" name="fat" value="0%" id="0"><label for="0">0%</label>
-                <input type="radio" name="fat" value="less10" id="less10" checked><label for="less10">до 10%</label>
+                <input type="radio" name="fat" value="0%" id="0" disabled checked><label for="0">0%</label>
+                <input type="radio" name="fat" value="less10" id="less10" disabled checked><label for="less10">до 10%</label>
                 <input type="radio" name="fat" value="less30" id="less30"><label for="less30">до 30%</label>
                 <input type="radio" name="fat" value="more30" id="more30"><label for="more30">выше 30%</label>
               </div>
@@ -177,9 +184,9 @@
             <fieldset class="ingredient">
               <legend>Наполнители:</legend>
               <div class="ingredient-options">
-                <input type="checkbox" name="chocolate" id="choco" checked><label for="choco">шоколадные</label>
+                <input type="checkbox" name="chocolate" id="choco" disabled checked><label for="choco">шоколадные</label>
                 <input type="checkbox" name="sugar" id="sugar" checked><label for="sugar">сахарные присыпки</label>
-                <input type="checkbox" name="fruits" id="fruits"><label for="fruits">фрукты</label>
+                <input type="checkbox" name="fruits" id="fruits" ><label for="fruits">фрукты</label>
                 <input type="checkbox" name="syrup" id="syrup"><label for="syrup">сиропы</label>
                 <input type="checkbox" name="jam" id="jam"><label for="jam">джемы</label>
               </div>
@@ -191,160 +198,196 @@
         </section>
         <section class="catalog-items">
           <article class="item">
-            <figure>
+            <div class="item-price-img">
               <img src="img/items/catalog-item1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <figcaption>
-                <a href="#">
-                  Сливочное с апельсиновым джемом и цитрусовой стружкой
-                </a>
-              </figcaption>
-            </figure>
-            <p class="item-price">
-              <b>310₽</b>/кг
-            </p>
+              <p class="item-price">
+                <b>310₽</b>/кг
+              </p>
+            </div>
+            <div class="item-description">
+              <a href="#">
+                Сливочное с апельсиновым джемом и цитрусовой стружкой
+              </a>
+              <a class="middle-btn item-btn" href="#">
+                Быстрый просмотр
+              </a>
+            </div>
           </article>
           <article class="item">
-            <figure>
+            <div class="item-price-img">
               <img src="img/items/catalog-item2.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <figcaption>
-                <a href="#">
-                  Сливочно-клубничное с присыпкой из белого шоколада
-                </a>
-              </figcaption>
-            </figure>
-            <p class="item-price">
-              <b>380₽</b>/кг
-            </p>
+              <p class="item-price">
+                <b>380₽</b>/кг
+              </p>
+            </div>
+            <div class="item-description">
+              <a href="#">
+                Сливочно-клубничное с присыпкой из белого шоколада
+              </a>
+              <a class="middle-btn item-btn" href="#">
+                Быстрый просмотр
+              </a>
+            </div>         
           </article>
           <article class="item">
-            <figure>
+            <div class="item-price-img">
               <img src="img/items/catalog-item3.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-              <figcaption>
-                <a href="#">
-                  Сливочно-кофейное с кусочками шоколада
-                </a>
-              </figcaption>
-            </figure>
-            <p class="item-price">
-              <b>355₽</b>/кг
-            </p>
+              <p class="item-price">
+                <b>355₽</b>/кг
+              </p>
+            </div>
+            <div class="item-description">
+              <a href="#">
+                Сливочно-кофейное с кусочками шоколада
+              </a>
+              <a class="middle-btn item-btn" href="#">
+                Быстрый просмотр
+              </a>
+            </div>
           </article>
           <article class="item">
-            <figure>
+            <div class="item-price-img">
               <img src="img/items/catalog-item4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-              <figcaption>
-                <a href="#">
-                  Сливочное крем-брюле с карамельной подливкой
-                </a>
-              </figcaption>
-            </figure>
-            <p class="item-price">
-              <b>415₽</b>/кг
-            </p>
+              <p class="item-price">
+                <b>415₽</b>/кг
+              </p>
+            </div>
+            <div class="item-description">
+              <a href="#">
+                Сливочное крем-брюле с карамельной подливкой
+              </a>
+              <a class="middle-btn item-btn" href="#">
+                Быстрый просмотр
+              </a>
+            </div>
           </article>
           <article class="item">
-            <figure>
+            <div class="item-price-img">
               <img src="img/items/catalog-item5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
-              <figcaption>
-                <a href="#">
-                  Сливочное с брусничным джемом
-                </a>
-              </figcaption>
-            </figure>
-            <p class="item-price">
-              <b>325₽</b>/кг
-            </p>
+              <p class="item-price">
+                <b>325₽</b>/кг
+              </p>
+            </div>
+            <div class="item-description">
+              <a href="#">
+                Сливочное с брусничным джемом
+              </a>
+              <a class="middle-btn item-btn" href="#">
+                Быстрый просмотр
+              </a>
+            </div>
           </article>
           <article class="item">
-            <figure>
+            <div class="item-price-img">
               <img src="img/items/catalog-item6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
-              <figcaption>
-                <a href="#">
-                  Сливочно-черничное с цельными ягодами черники
-                </a>
-              </figcaption>
-            </figure>
-            <p class="item-price">
-              <b>410₽</b>/кг
-            </p>
+              <p class="item-price">
+                <b>410₽</b>/кг
+              </p>
+            </div>
+            <div class="item-description">
+              <a href="#">
+                Сливочно-черничное с цельными ягодами черники
+              </a>
+              <a class="middle-btn item-btn" href="#">
+                Быстрый просмотр
+              </a>
+            </div>
           </article>
           <article class="item">
-            <figure>
+            <div class="item-price-img">
               <img src="img/items/catalog-item7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
-              <figcaption>
-                <a href="#">
-                  Сливочно-лимонное с карамельной присыпкой
-                </a>
-              </figcaption>
-            </figure>
-            <p class="item-price">
-              <b>375₽</b>/кг
-            </p>
+              <p class="item-price">
+                <b>375₽</b>/кг
+              </p>
+            </div>
+            <div class="item-description">
+              <a href="#">
+                Сливочно-лимонное с карамельной присыпкой
+              </a>
+              <a class="middle-btn item-btn" href="#">
+                Быстрый просмотр
+              </a>
+            </div>          
           </article>
           <article class="item">
-            <figure>
+            <div class="item-price-img">
               <img src="img/items/catalog-item8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-              <figcaption>
-                <a href="#">
-                  Сливочное с шоколадной стружкой
-                </a>
-              </figcaption>
-            </figure>
-            <p class="item-price">
-              <b>320₽</b>/кг
-            </p>
+              <p class="item-price">
+                <b>320₽</b>/кг
+              </p>
+            </div>
+            <div class="item-description">
+              <a href="#">
+                Сливочное с шоколадной стружкой
+              </a>
+              <a class="middle-btn item-btn" href="#">
+                Быстрый просмотр
+              </a>
+            </div>            
           </article>
           <article class="item">
-            <figure>
+            <div class="item-price-img">
               <img src="img/items/catalog-item9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-              <figcaption>
-                <a href="#">
-                  Сливочно-ванильное с кусочками шоколада
-                </a>
-              </figcaption>
-            </figure>
-            <p class="item-price">
-              <b>440₽</b>/кг
-            </p>
+              <p class="item-price">
+                <b>440₽</b>/кг
+              </p>
+            </div>
+            <div class="item-description">
+              <a href="#">
+                Сливочно-ванильное с кусочками шоколада
+              </a>
+              <a class="middle-btn item-btn" href="#">
+                Быстрый просмотр
+              </a>
+            </div>            
           </article>
           <article class="item">
-            <figure>
+            <div class="item-price-img">
               <img src="img/items/catalog-item10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
-              <figcaption>
-                <a href="#">
-                  Сливочное с ментоловым сиропом
-                </a>
-              </figcaption>
-            </figure>
-            <p class="item-price">
-              <b>435₽</b>/кг
-            </p>            
+              <p class="item-price">
+                <b>435₽</b>/кг
+              </p>
+            </div>
+            <div class="item-description">  
+              <a href="#">
+                Сливочное с ментоловым сиропом
+              </a>
+              <a class="middle-btn item-btn" href="#">
+                Быстрый просмотр
+              </a>
+            </div>                      
           </article>
           <article class="item">
-            <figure>
+            <div class="item-price-img">
               <img src="img/items/catalog-item11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-              <figcaption>
-                <a href="#">
-                  Сливочное с кусочками черного шоколада
-                </a>
-              </figcaption>
-            </figure>
-            <p class="item-price">
-              <b>355₽</b>/кг
-            </p>
+              <p class="item-price">
+                <b>355₽</b>/кг
+              </p>
+            </div>
+            <div class="item-description">
+              <a href="#">
+                Сливочное с кусочками черного шоколада
+              </a>
+              <a class="middle-btn item-btn" href="#">
+                Быстрый просмотр
+              </a>
+            </div>          
           </article>
           <article class="item">
-            <figure>
+            <div class="item-price-img">
               <img src="img/items/catalog-item12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
-              <figcaption>
-                <a href="#">
-                  Сливочное с мятным сиропом
-                </a>
-              </figcaption>
-            </figure>
-            <p class="item-price">
-              <b>420₽</b>/кг
-            </p>
+              <p class="item-price">
+                <b>420₽</b>/кг
+              </p>
+            </div>
+            <div class="item-description">
+              <a href="#">
+                Сливочное с мятным сиропом
+              </a>
+              <a class="middle-btn item-btn" href="#">
+                Быстрый просмотр
+              </a>
+            </div>
           </article>
         </section>
         <div class="pages">
@@ -369,22 +412,22 @@
     <footer class="container clearfix">
       <section class="footer-smm">
         <a class="smm-btn smm-btn-twit" href="#">
-          <svg width="31.375" height="31.41" viewBox="0 0 31.375 31.41">
+          <svg viewBox="0 0 31.375 31.41">
             <path d="M15.677,31.389 C7.011,31.389 -0.015,24.363 -0.015,15.697 C-0.015,7.031 7.011,0.005 15.677,0.005 C24.343,0.005 31.369,7.031 31.369,15.697 C31.369,24.363 24.343,31.389 15.677,31.389 ZM24.324,9.374 C23.620,9.792 22.841,10.094 22.011,10.258 C21.347,9.550 20.400,9.108 19.353,9.108 C17.341,9.108 15.710,10.739 15.710,12.750 C15.710,13.035 15.743,13.313 15.805,13.580 C12.778,13.428 10.094,11.978 8.297,9.774 C7.984,10.312 7.804,10.938 7.804,11.606 C7.804,12.869 8.447,13.984 9.425,14.637 C8.827,14.618 8.266,14.454 7.775,14.182 C7.774,14.197 7.774,14.212 7.774,14.227 C7.774,15.992 9.030,17.464 10.696,17.799 C10.391,17.882 10.069,17.926 9.737,17.926 C9.502,17.926 9.274,17.904 9.051,17.861 C9.515,19.308 10.860,20.361 12.454,20.390 C11.207,21.368 9.637,21.950 7.930,21.950 C7.636,21.950 7.346,21.933 7.061,21.899 C8.673,22.932 10.588,23.535 12.645,23.535 C19.344,23.535 23.008,17.985 23.008,13.172 C23.008,13.014 23.004,12.857 22.997,12.701 C23.709,12.187 24.326,11.546 24.815,10.816 C24.161,11.105 23.460,11.301 22.723,11.389 C23.475,10.938 24.052,10.224 24.324,9.374 Z" fill-rule="evenodd"/>
           </svg>
         </a>
         <a class="smm-btn smm-btn-insta" href="#">
-          <svg width="31.376" height="31.41" viewBox="0 0 31.376 31.41">
+          <svg viewBox="0 0 31.376 31.41">
             <path d="M15.677,31.391 C7.011,31.391 -0.014,24.366 -0.014,15.699 C-0.014,7.033 7.011,0.008 15.677,0.008 C24.343,0.008 31.369,7.033 31.369,15.699 C31.369,24.366 24.343,31.391 15.677,31.391 ZM23.694,9.562 C23.694,8.599 22.912,7.817 21.949,7.817 L9.621,7.817 C8.658,7.817 7.876,8.599 7.876,9.562 L7.876,21.873 C7.876,22.837 8.657,23.618 9.621,23.618 L21.949,23.618 C22.912,23.618 23.694,22.837 23.694,21.873 L23.694,9.562 ZM21.372,12.683 L19.508,12.683 C19.170,12.683 18.896,12.409 18.896,12.071 L18.896,10.207 C18.896,9.869 19.170,9.596 19.508,9.596 L21.372,9.596 C21.710,9.596 21.984,9.869 21.984,10.207 L21.984,12.071 C21.984,12.409 21.710,12.683 21.372,12.683 ZM15.810,18.589 C14.242,18.589 12.972,17.318 12.972,15.750 C12.972,14.182 14.242,12.912 15.810,12.912 C17.378,12.912 18.876,14.056 18.876,15.750 C18.876,17.444 17.378,18.589 15.810,18.589 ZM15.809,20.676 C18.527,20.676 20.731,18.473 20.731,15.755 C20.731,15.328 20.676,14.912 20.574,14.517 C21.457,14.519 21.953,14.517 21.953,14.517 L21.953,21.302 C21.953,21.640 21.679,21.914 21.342,21.914 L10.277,21.914 C9.939,21.914 9.665,21.640 9.665,21.302 L9.665,14.517 C9.665,14.517 9.945,14.517 11.045,14.517 C10.942,14.913 10.888,15.328 10.888,15.755 C10.888,18.473 13.091,20.676 15.809,20.676 Z" fill-rule="evenodd"/>
           </svg>
         </a>
         <a class="smm-btn smm-btn-fb" href="#">
-          <svg width="31.375" height="31.41" viewBox="0 0 31.375 31.41">
+          <svg viewBox="0 0 31.375 31.41">
             <path d="M15.677,31.391 C7.010,31.391 -0.015,24.366 -0.015,15.699 C-0.015,7.033 7.010,0.008 15.677,0.008 C24.343,0.008 31.368,7.033 31.368,15.699 C31.368,24.366 24.343,31.391 15.677,31.391 ZM19.586,6.076 L16.794,6.076 C13.500,6.076 12.712,7.622 12.712,10.418 L12.712,12.617 L10.823,12.617 L10.823,15.706 L12.712,15.706 L12.712,24.997 L16.450,24.997 L16.450,15.706 L19.193,15.706 L19.478,12.617 L16.450,12.617 L16.455,10.761 C16.455,9.867 16.540,9.505 17.822,9.505 L19.586,9.505 L19.586,6.076 Z" fill-rule="evenodd"/>
           </svg>
         </a>
         <a class="smm-btn smm-btn-vk" href="#">
-          <svg width="31.375" height="31.41" viewBox="0 0 31.375 31.41">
+          <svg viewBox="0 0 31.375 31.41">
             <path d="M15.677,31.391 C7.010,31.391 -0.015,24.366 -0.015,15.699 C-0.015,7.033 7.010,0.008 15.677,0.008 C24.343,0.008 31.368,7.033 31.368,15.699 C31.368,24.366 24.343,31.391 15.677,31.391 ZM20.887,16.057 C20.383,15.511 19.709,15.152 18.871,14.975 L18.871,14.903 C19.454,14.657 19.912,14.277 20.242,13.759 C20.575,13.242 20.741,12.653 20.741,11.989 C20.741,11.415 20.619,10.910 20.379,10.471 C20.139,10.035 19.774,9.682 19.288,9.420 C18.839,9.177 18.356,9.018 17.842,8.944 C17.328,8.865 16.570,8.828 15.573,8.828 L10.769,8.828 L10.769,22.425 L16.211,22.425 C17.156,22.425 17.932,22.340 18.543,22.169 C19.157,21.997 19.719,21.713 20.229,21.312 C20.663,20.975 21.005,20.555 21.261,20.044 C21.517,19.531 21.644,18.937 21.644,18.260 C21.644,17.337 21.392,16.603 20.887,16.057 ZM17.234,19.666 C16.882,19.819 16.533,19.899 16.193,19.912 C15.853,19.925 15.239,19.931 14.351,19.931 L14.167,19.931 L14.167,16.527 L14.797,16.527 C15.404,16.527 15.891,16.530 16.253,16.540 C16.614,16.548 16.900,16.592 17.106,16.674 C17.446,16.795 17.702,16.973 17.873,17.213 C18.045,17.449 18.128,17.777 18.128,18.197 C18.128,18.525 18.057,18.819 17.914,19.077 C17.770,19.336 17.546,19.531 17.234,19.666 ZM16.552,13.990 C16.302,14.105 16.059,14.168 15.825,14.180 C15.591,14.193 15.180,14.199 14.597,14.199 L14.167,14.199 L14.167,11.322 L14.404,11.322 C15.012,11.322 15.470,11.325 15.778,11.334 C16.087,11.344 16.352,11.397 16.576,11.496 C16.817,11.599 16.991,11.768 17.103,11.998 C17.215,12.229 17.272,12.454 17.272,12.675 C17.272,12.970 17.218,13.233 17.115,13.461 C17.013,13.684 16.823,13.862 16.552,13.990 Z" fill-rule="evenodd"/>
           </svg>
         </a>
@@ -411,5 +454,7 @@
         </p>
       </section>
     </footer>
+   </div>
+   <script src="js/script.js"></script>
   </body>
 </html>

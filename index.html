@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Магазин мороженого Gllacy</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -22,7 +23,7 @@
           </div>
           <nav class="header-menu">
             <ul class="main-menu">
-              <li>
+              <li class="active-menu">
                 <a href="#">Каталог</a>
                 <ul class="submenu">
                   <li class="new">
@@ -139,19 +140,19 @@
               <h1>
                 Крем-брюле и пломбир с малиновым джемом
               </h1>
-              <a class="buy-button" href="#">Давайте оба!</a>
+              <a class="big-btn" href="#">Давайте оба!</a>
             </div>
             <div class="slide" id="slide2">
               <h1>
                 Шоколадный пломбир и лимонный сорбет
               </h1>
-              <a class="buy-button" href="#">Давайте оба!</a>
+              <a class="big-btn" href="#">Давайте оба!</a>
             </div>
             <div class="slide" id="slide3">
               <h1>
                 Пломбир с помадкой и клубничный щербет
               </h1>
-              <a class="buy-button" href="#">Давайте оба!</a>
+              <a class="big-btn" href="#">Давайте оба!</a>
             </div>
           </div>
         </div>
@@ -162,7 +163,7 @@
           <p class="promo1-description">
             При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
           </p>
-          <a class="btn" href="#">
+          <a class="middle-btn" href="#">
             Хочу варенье!
           </a>
         </section>
@@ -173,7 +174,7 @@
           <p class="promo2-description">
             При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
-          <a class="btn" href="#">
+          <a class="middle-btn" href="#">
             Хочу шоколадки!
           </a>
         </section>
@@ -190,7 +191,7 @@
               <a href="#">
                 Сливочное с апельсиновым джемом и цитрусовой стружкой
               </a>
-              <a class="btn item-btn" href="#">
+              <a class="middle-btn item-btn" href="#">
                 Быстрый просмотр
               </a>
             </div>
@@ -207,7 +208,7 @@
               <a href="#">
                 Сливочно-кофейное с кусочками шоколада
               </a>
-              <a class="btn item-btn" href="#">
+              <a class="middle-btn item-btn" href="#">
                 Быстрый просмотр
               </a>
             </div> 
@@ -224,7 +225,7 @@
               <a href="#">
                 Сливочно-клубничное с присыпкой из белого шоколада
               </a>
-              <a class="btn item-btn" href="#">
+              <a class="middle-btn item-btn" href="#">
                 Быстрый просмотр
               </a>
             </div>
@@ -241,7 +242,7 @@
               <a href="#">
                 Сливочное крем-брюле с карамельной подливкой
               </a>
-              <a class="btn item-btn" href="#">
+              <a class="middle-btn item-btn" href="#">
                 Быстрый просмотр
               </a>
             </div>
@@ -286,7 +287,7 @@
             </p>
             <form class="subscribe-form clearfix" method="post" action="https://echo.htmlacademy.ru/">
               <input class="text-input" type="text" name="e-mail" placeholder="Электронная почта">
-              <input class="btn btn-subscribe" type="submit" value="Отправить">
+              <input class="middle-btn btn-subscribe" type="submit" value="Отправить">
             </form>
           </div>
         </section>
@@ -304,7 +305,7 @@
               <strong>8 812 450-25-25</strong><br>
               (с 10 до 20, ежедневно)
             </p>
-            <a class="btn feedback-btn" href="#">
+            <a class="middle-btn feedback-btn" href="#">
               Форма обратной связи
             </a>
           </div>
@@ -356,7 +357,21 @@
         </p>
       </section>
     </footer>
-<!--     </div> -->
+    <div class="feedback-box">
+      <button class="feedback-box-close" type="button" title="Закрыть"></button>
+      <h2 class="feedback-box-title">
+        Мы обязательно Вам ответим!
+      </h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="text-input" type="text" name="feedback-name" id="feedback-name" placeholder="Как Вас зовут?">
+        <input class="text-input" type="text" name="feedback-mail" id="feedback-mail" placeholder="Ваша почта для ответа?">
+        <textarea class="text-input textarea-form" type="text" name="feedback-textarea" id="feedback-textarea" cols="" rows="" placeholder="Напишите что-нибудь..."></textarea>
+        <input class="btn-feedback middle-btn" type="submit" value="Отправить">
+      </form>
+    </div>
+    <div class="feedback-box-overlay"></div>
    </div>
+   <script src="js/script.js"></script>
+   <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=TphhTehRCOB-ZjmdBwf4IXNQXYxcJxXI&width=100%&height=453&lang=ru_RU&id=yandex-map&sourceType=constructor"></script>
   </body>
 </html>
